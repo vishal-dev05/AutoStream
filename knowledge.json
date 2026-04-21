@@ -1,0 +1,29 @@
+{
+  "product_name": "AutoStream",
+  "description": "Automated video editing SaaS for content creators.",
+
+  "plans": [
+    {
+      "name": "Basic",
+      "price_monthly": 29,
+      "videos_per_month": 10,
+      "resolution": "720p",
+      "ai_captions": false,
+      "support": "Email only"
+    },
+    {
+      "name": "Pro",
+      "price_monthly": 79,
+      "videos_per_month": "Unlimited",
+      "resolution": "4K",
+      "ai_captions": true,
+      "support": "24/7 live support"
+    }
+  ],
+
+  "policies": [
+    "No refunds after 7 days of purchase.",
+    "24/7 support is available only on the Pro plan.",
+    "Free trial available for 14 days on Pro plan."
+  ]
+}

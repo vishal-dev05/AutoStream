@@ -1,0 +1,8 @@
+langchain
+langgraph
+langchain-ollama
+ollama
+fastapi
+uvicorn
+python-dotenv
+pydantic
