@@ -1,7 +1,6 @@
 {
   "product_name": "AutoStream",
   "description": "Automated video editing SaaS for content creators.",
-
   "plans": [
     {
       "name": "Basic",
@@ -20,7 +19,6 @@
       "support": "24/7 live support"
     }
   ],
-
   "policies": [
     "No refunds after 7 days of purchase.",
     "24/7 support is available only on the Pro plan.",

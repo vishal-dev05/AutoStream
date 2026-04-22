@@ -1,9 +1,10 @@
 from langgraph.graph import StateGraph, END
-from langchain_community.chat_models import ChatOllama
+from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 from state import AgentState
 from intent import classify_intent
 from rag import build_retriever, retrieve_context
+import state
 from tools import mock_lead_capture
 
 llm = ChatOllama(model="llama3")
@@ -133,5 +134,6 @@ def run():
         last_ai = [m for m in state["messages"] if isinstance(m, AIMessage)]
         if last_ai:
             print(f"Agent: {last_ai[-1].content}\n")
-            
-            
+        state = agent.invoke(state)
+print(f"[DEBUG] Intent: {state['intent']}")  # ← add this line    
+if __name__ == "__main__":    run()   
